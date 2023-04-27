@@ -44,6 +44,6 @@ const politicians=['modi','yogi','shah','gandhi','tRaja'];
 politicians.splice(3,1);
 console.log(politicians);
 if(politicians.indexOf('yogi')!=-1){
-    politicians.splice(politicians.indexOf('yogi'),0,'Yogi');
+    politicians.splice(politicians.indexOf('yogi'),1,'Yogi');
 }
 console.log(`after searchind and updated ${politicians}`);
