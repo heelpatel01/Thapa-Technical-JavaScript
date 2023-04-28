@@ -37,6 +37,47 @@
 // console.log(myName[1]);
 
 //toUpperCase and toLowerCase
-let str="Jay Shree Ram";
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+// let str="Jay Shree Ram";
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+//concat
+
+
+//date and time
+// var currDate=new Date();
+// console.log(currDate);
+// console.log(currDate.toLocaleString());
+// console.log(currDate.toDateString());
+// console.log(currDate.toString());
+
+
+//Date.now()
+// console.log(Date.now());
+
+
+//Date()
+//(Year,Month,Date,Hour,Minute,Seconds,MiliSeconds)
+//Month range is 0-11
+//month vala argument is must required
+
+// var dt=new Date(2023,4,5,10,30,30,30);
+// console.log(dt);
+
+
+
+//Date Methods
+
+// var currDate=new Date();
+// console.log(currDate);
+// console.log(currDate.getFullYear());
+// console.log(currDate.getMonth());
+// console.log(currDate.getDate());
+// console.log(currDate.getHours());
+// console.log(currDate.getMinutes());
+// console.log(currDate.getSeconds());
+// console.log(currDate.getMilliseconds());
+// console.log(currDate.getTime());
+
+
+//time methods :-

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time Testing</title>
+</head>
+<body>
+    <h1>This Is Time</h1>
+
+    <button onclick="showTime()">Heel</button>
+
+    <p id="check"></p>
+
+    <p id="date"></p>
+    <p id="time"></p>
+
+    <script>
+        var d= new Date().toLocaleDateString();
+        document.getElementById("date").innerHTML=d;
+
+        var t=new Date().toLocaleTimeString();
+        document.getElementById(`time`).innerHTML=t;
+
+        function showTime(){
+            var che=new Date().toLocaleTimeString()
+            document.getElementById("check").innerHTML=che;
+        }
+    </script>
+</body>
+</html>
