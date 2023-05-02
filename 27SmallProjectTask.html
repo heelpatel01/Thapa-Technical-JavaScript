@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Wait</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .main-div{
+            text-align: center;
+            position: relative;
+            margin: 20%;
+            background-color: antiquewhite;
+        }
+        .f-div,.s-div,.t-div{
+            margin: 55px;
+            font-size: 5rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="f-div">Yogi</div>
+        <div class="s-div">Modi</div>
+        <div class="t-div">Shah</div>
+        <div id="change-text">India</div>
+        <button class="click-me" onclick="changeContent()"> Go To 1945</button>
+    </div>
+
+    <script>
+
+        const changeContent = ()=>{
+
+            //using getElements
+            // document.getElementById('change-text').innerHTML="Bharat";
+
+        //     if(document.getElementById('change-text').innerHTML=="India")
+        //     {
+        //         document.getElementById('change-text').innerHTML="Bharat";
+        //     }
+        //     else{
+        //         document.getElementById('change-text').innerHTML="India";
+        //     }
+        // 
+
+
+        //using query selectors
+
+        // const tempVar=document.querySelector('#change-text').innerHTML;
+
+        if(document.querySelector('#change-text').innerHTML=="India"){
+            document.querySelector('#change-text').innerHTML="Akhand Hindu Rashtra";
+        }else{
+            document.querySelector('#change-text').innerHTML="Jay Shree Ram";
+        }
+
+    }
+
+    </script>
+
+</body>
+</html>

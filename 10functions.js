@@ -1,5 +1,5 @@
-function addition(a,b,c){
-    console.log(a+b+c);
+function addition(a,b){
+    console.log(a+b);
 }
 
-addition(10,20,80);
+addition(10,20);
