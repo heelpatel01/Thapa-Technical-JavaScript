@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of event</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            margin-top: 100px;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            /* margin-left: 500px; */
+        }
+
+        div{
+            margin: 10px;
+            font-size: larger;
+            border-style: solid;
+            margin: 50px;
+            background-color: rgb(14, 39, 39);
+            cursor: pointer;   
+            width: 120px;
+            height: 50px;
+            justify-content: center;
+            margin-left: 800px;
+            display: flex;
+  align-items: center;
+  justify-content: center;
+
+                          
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Types of events</h1>
+
+    <div class="div-1" onclick="alert('I am simple just like you!')">Simple Inline Event Alert()</div>
+
+    <div class="div-2" onclick="callingFunction()">Second Div</div>
+    <div class="div-3" id="thirdWay">Third Div</div>
+    <div class="div-4">Fourth Div</div>
+
+    <script>
+        // second type 
+        const callingFunction= ()=>
+    {
+        alert("I Am Most Comman Way");
+    }
+
+
+    // Third Type
+    const thirdWay = document.getElementsByClassName('div-3');
+
+    thirdWay[0].onclick= function(){
+        alert("I Am Comman Way Again"); 
+
+         
+    }
+    
+
+    //fourth type
+    const fourthWay= document.querySelector('.div-4');
+
+    fourthWay.addEventListener('click',() =>{
+        alert("Jay Shree Ram");
+    });
+    </script>
+
+</body>
+</html>

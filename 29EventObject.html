@@ -1,0 +1,48 @@
+<!-- Mouse Events -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        justify-content: center;
+    }
+</style>
+<body>
+    
+    <div id="myP" onmousedown="mouseDown()"  onmouseenter="onmouseup()">  
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, officiis? Tempora, error numquam dolorum, labore ullam voluptatibus at necessitatibus architecto odio repellendus distinctio similique ut iure commodi dolor facilis autem saepe in fuga unde, omnis assumenda. Aliquam sed culpa tempora, veritatis pariatur minus cupiditate consectetur quis architecto perspiciatis nihil laudantium.
+    <div>
+
+
+    <script>
+        // onmouseup and onmousedown is not work on touchpad of laptop
+
+             function mouseUp(){
+                document.getElementById('myP').style.color="red";
+             }
+
+
+    </script>
+
+    <script>
+        var mEnter= document.getElementById("myP");
+
+        mEnter.addEventListener('mouseenter',()=>{
+            mEnter.style.backgroundColor="red";
+        })
+
+        mEnter.addEventListener('mouseleave',()=>{
+            mEnter.style.backgroundColor="pink";
+        })
+    </script>
+
+</body>
+</html>

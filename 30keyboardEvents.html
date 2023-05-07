@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="input-field">
+    <p id="enter-key"></p>
+
+
+    <script>
+        const inputField = document.getElementById("input-field");
+        inputField.addEventListener("keydown", event => {
+            document.getElementById("enter-key").innerHTML = `You pressed "${event.key}" and its code is "${event.code}"`;
+            console.log(`You pressed "${event.key}" and its code is "${event.code}"`);
+        });
+    </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" onkeypress="keyPress()">
+    <p id="enter-key" ></p>
+
+
+    <script>
+        const keyPress=()=>{
+            document.getElementById("enter-key").innerHTML= `you pressed ${event.key} anf its code is ${event.code}`;
+            console.log(`you pressed ${event.key} anf its code is ${event.code}`);
+        }
+    </script>
+
+</body>
+</html>
