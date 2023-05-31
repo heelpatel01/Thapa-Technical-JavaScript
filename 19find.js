@@ -8,8 +8,8 @@
 // ------------------------------------------------------------------
 
 
-// const votes=[100,200,300,400,500,600,700];
-// console.log(votes.find((count)=>count>400));
+const votes=[100,200,300,400,500,600,700];
+console.log(votes.find((count)=>count>400));
 
 
 
@@ -18,19 +18,12 @@
 
 
 
-const votes=[100,200,300,400,500,600,700];
-const variableName=votes.find((currVal)=>{
-    return currVal>200;
-});
-console.log(variableName);
+// const votes=[100,200,300,400,500,600,700];
+// const variableName=votes.find((currVal)=>{
+//     return currVal>200;
+// });
+// console.log(variableName);
 
 
-
-
-
-
-
-
-
-
+// -------------
 

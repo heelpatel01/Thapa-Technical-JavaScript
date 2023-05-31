@@ -10,8 +10,56 @@
     
 
     <div>
-        
+        <label for="">Your Name👉🏼</label>
+        <input type="text" name="" id="name">
+        <br>
+        <label for="">Choose an car</label>
+        <select name="cars" id="cars" onchange="selectCar()">
+        <option value="">Select Your Fav</option>
+        <option value="GT">GT Mustang</option>
+        <option value="porsche">Porsche</option>
+        <option value="Buggu">Buggati</option>
+        </select>
     </div>
+
+    <div>
+        <p id="prints"></p>
+    </div>
+    
+    
+    <!-- Using addEventListner  -->
+    <script>
+        const carsX=document.getElementById('cars');
+        epid.addEventListener('change',()=>{
+            const mName=document.getElementById('name').value;
+            const carName=document.getElementById('cars').value;
+            const result=document.getElementById('prints');
+
+            result.innerHTML=`${mName} have selected ${carName}`;
+
+        })
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const selectCar=()=>{
+            const names=document.getElementById('name').value;
+        const carName=document.getElementById('cars').value;
+            document.getElementById('prints').innerHTML=`${names} have selected ${carName}`;
+            
+        }
+    </script>
 
 
 </body>

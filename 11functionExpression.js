@@ -12,3 +12,6 @@ const sum = (a, b) => {
 }
 
 
+let stmt= name => `Hello Your Name is ${name}`
+
+console.log(stmt("Heel"))

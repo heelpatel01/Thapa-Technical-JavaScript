@@ -40,10 +40,10 @@
 // politicians.splice(3,1,'pappu');
 // console.log(politicians);
 
-const politicians=['modi','yogi','shah','gandhi','tRaja'];
-politicians.splice(3,1);
-console.log(politicians);
-if(politicians.indexOf('yogi')!=-1){
-    politicians.splice(politicians.indexOf('yogi'),1,'Yogi');
-}
-console.log(`after searchind and updated ${politicians}`);
+// const politicians=['modi','yogi','shah','gandhi','tRaja'];
+// politicians.splice(3,1);
+// console.log(politicians);
+// if(politicians.indexOf('yogi')!=-1){
+//     politicians.splice(politicians.indexOf('yogi'),1,'Yogi');
+// }
+// console.log(`after searchind and updated ${politicians}`);

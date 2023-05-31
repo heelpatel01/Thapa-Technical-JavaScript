@@ -13,8 +13,8 @@
 
 //For Each
 
-var cars=["Buggati","Lamborgini","Porsche","Ferrari"];
-cars.forEach(function(element,index,array){
-    console.log(array)
-});
+// var cars=["Buggati","Lamborgini","Porsche","Ferrari"];
+// cars.forEach(function(element,index,array){
+//     console.log(array)
+// });
 

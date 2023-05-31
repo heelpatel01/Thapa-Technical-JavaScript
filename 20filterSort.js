@@ -1,8 +1,10 @@
-votes=[100,900,700,400,500,600,730];
+votes=[900,700,400,500,600,730,100];
 
-console.log(votes.filter((nums)=>{nums<400}));
-
+const flt=votes.filter((nums,index)=>{return nums<600});
+console.log(flt);
 
 //sort  (it mostly used to sort the list of Strings in ascending order)
 
-console.log(votes.sort());
+console.log(flt.sort());
+
+

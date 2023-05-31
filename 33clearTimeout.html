@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Time Out</title>
+</head>
+<body>
+    <h1>Click Enter To Kow My Name:-
+        and for stopping this process press stop...
+    </h1>
+    <button onclick="myVar=setTimeout(myFun,1000)">Show Name</button>
+    <button onclick="clearTimeout(myVar)">Stop</button>
+    <div>
+        <p id="result">
+
+        </p>
+    </div>
+
+
+    <script>
+
+        function myFun(){
+            document.querySelector('#result').innerHTML="I am coming";
+        }
+    </script>
+
+
+    <!-- <script>
+        const tbh=document.querySelector('#result');
+
+        const elemnt=document.querySelector('#press');
+
+        const funder=()=>{
+            tbh.innerHTML='Loading...👽';
+            
+            setTimeout(()=>{
+                tbh.innerHTML='Heel Patel is here...😎'
+            },1000)
+        }        
+
+        elemnt.addEventListener('click' ,funder);
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h1>Click Enter To Kow My Name:-</h1>
+    <button id="press">Show Name</button>
+    <div>
+        <p id="result">
+
+        </p>
+    </div>
+
+
+
+    <script>
+        const tbh=document.querySelector('#result');
+
+        const elemnt=document.querySelector('#press');
+
+        const funder=()=>{
+            tbh.innerHTML='Loading...👽';
+            
+            setTimeout(()=>{
+                tbh.innerHTML='Heel Patel is here...😎'
+            },1000)
+        }        
+
+        elemnt.addEventListener('click' ,funder);
+    </script>
+</body>
+</html>

@@ -16,14 +16,14 @@
 // substring
 // var myName="Heel Patel Kanaiyalal";
 // console.log(myName.substring(10,-9));
-// console.log(myName.substring(4,1))
+// console.log(myName.substring(4,1));
 
-//replace  //.replace(orignal string,replacing string)
+//replace  //.replace(orignal string,replacing string) //Replaces only first string
 // let justChant=`jay shree ram ram ram ram ram`;
 // console.log(justChant.replace(`ram`,`krishna`));   
 
 
-//vharAt
+//charAt
 // let chant="Jay Shree Ram";
 // console.log(chant.charAt(1));
 
@@ -41,11 +41,11 @@
 // console.log(str.toUpperCase());
 // console.log(str.toLowerCase());
 
-//concat
+//concat 
 
 
 //date and time
-// var currDate=new Date();
+var currDate=new Date();
 // console.log(currDate);
 // console.log(currDate.toLocaleString());
 // console.log(currDate.toDateString());
