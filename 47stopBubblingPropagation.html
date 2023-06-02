@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propgation</title>
+</head>
+<body>
+    
+    <div id="outer">outer<div id="inner">inner</div></div>
+    
+        
+<!-- its by default bubbling propagation -->
+<!-- by using "event.stopPropagation();" in function we can stop this bubbling propagation -->
+
+    <script>
+        const oto=document.getElementById('outer');
+        const ino=document.getElementById('inner');
+    
+        const fun1= ()=>{
+            alert("Hlo");
+            event.stopPropagation();
+        }
+
+        const fun2= ()=>{
+            alert("Hlo Main");
+            event.stopPropagation();
+        }
+
+        // function fun1(){
+        //     alert("Hello I Am Outer");
+        // }
+
+        // function fun2(){
+        //     alert("Hello I Am Inner");
+        // }
+
+        oto.addEventListener('click',fun1);
+        ino.addEventListener('click',fun2);
+    </script>
+</body>
+</html>

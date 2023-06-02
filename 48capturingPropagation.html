@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propgation</title>
+</head>
+<body>
+    
+    <div id="outer">outer<div id="inner">inner</div></div>
+    
+        
+    <script>
+        const oto=document.getElementById('outer');
+        const ino=document.getElementById('inner');
+    
+        const fun1= ()=>{
+            alert("Hlo");
+        }
+
+        const fun2= ()=>{
+            alert("Hlo Main");
+        }
+
+// for making capturing we pass third argument in addEventListener() function...true or false if we pass true than it will impliment capturing otherwise by default it is false means by default it remains buubling propagation
+        oto.addEventListener('click',fun1,true);
+        ino.addEventListener('click',fun2,true);
+    </script>
+</body>
+</html>
