@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        const container = document.querySelector('#container');
+
+        const request = new XMLHttpRequest();
+        request.open('GET', "https://restcountries.com/v3.1/name/nepal");
+        request.send();
+
+        // to get the response
+        request.addEventListener('load', function(){
+            const [data] = JSON.parse(this.responseText);
+            const htmlData = `
+            <div> 
+                <h1>Capital: ${data.capital}</h1>
+                <h1>flag: ${data.flag}</h1>
+            </div>
+            `;
+            
+            // container.innerHTML = htmlData; // Update the container with the generated HTML
+            // OR WE CAN USED
+            container.insertAdjacentHTML("afterbegin",htmlData)
+        });
+    </script>
+</body>
+</html>

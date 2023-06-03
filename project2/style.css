@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: rgb(222, 222, 0);
+}
+
+h3{
+    margin-top: 10px;
+}
+
+.container{
+    position: relative;
+    margin-top: 250px;
+    margin-left: 450px;
+    height: 300px;
+    width: 500px;
+    border:solid;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#joke{
+    margin-top: 100px; 
+    font-family: Bradley Hand, cursive	;   
+}
+
+#jokeBtn{
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 209);
+    border-radius: 5px;
+    font-size: 20px;
+}
+#jokeBtn:hover{
+    background-color: rgb(12, 82, 144);
+    color: aliceblue;
+    cursor: pointer;
+}
